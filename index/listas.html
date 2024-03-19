@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <link rel="stylesheet" href="">
+
+    <style>
+        body{
+            background-image: url(imagens/degrade.jpg);
+            background-repeat: no-repeat;
+            
+        }
+        .titulo{
+            text-align: center;
+            font-style: italic;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        div{
+            font-style: italic;
+        }
+        div>h3{
+            text-align: center;
+        }
+        #list1{
+            border: 1px solid red;
+            border-radius: 5px;
+            width: 60%;
+            padding: 0.7% 0.8% 0.7% 0.2%;
+            margin: 0.7% 0.7% 0.7% 20%;
+            background-color: #c7bfbf;
+        }
+        #list2{
+            border: 1px solid red;
+            border-radius: 5px;
+            width: 60%;
+            padding: 0.7% 0.8% 0.7% 0.2%;
+            margin: 0.7% 0.7% 0.7% 20%;
+            background-color: #c7bfbf;
+        }
+        #list3{
+            border: 1px solid red;
+            border-radius: 5px;
+            width: 60%;
+            padding: 0.7% 0.4% 0.7% 0.8%;
+            margin: 0.7% 0.7% 0.7% 20%;
+            background-color: #c7bfbf;
+        }
+
+        button{
+            display: inline-block;
+            cursor: pointer;
+            background-color: aquamarine;
+            border: none;
+            border-radius: 15px;
+            padding: 10px;
+            box-shadow: 0 9px #3d3c3c;
+            font-style: italic;
+            font-size: 16px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            
+        }
+        button:hover {
+            background-color: #3e8e41;
+        }
+        button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <h1 class="titulo">.::TIPOS DE LISTAS::.</h1>
+    <div id="list1">
+        <h3>Listas Não Ordenadas</h3>
+        <ul type="square">
+            <li>Maçã</li>
+            <li>Banana</li>
+            <li>Uva</li>
+            <li>Abacate</li>
+        </ul>
+    </div>  
+
+    <div id="list2">
+        <h3>Listas Ordenadas</h3>
+        <ol type="I">
+            <li>Maçã</li>
+            <li>Banana</li>
+            <li>Uva</li>
+            <li>Abacate</li>
+        </ol>
+    </div>
+
+    <div id="list3">
+        <h3>Listas de Definições</h3>
+        <dl>
+            <dt>Maçã</dt>
+            <dd>A maçã é excelente para prevenir e manter a taxa de colesterol</dd>
+            <dt>Banana</dt>
+            <dd>É uma fonte de vitamina A,C, fibras e potássio.</dd>
+            <dt>Uva</dt>
+            <dd>A uva é o fruto da videira, da família das vitaceae</dd>
+            <dt>Abacate</dt>
+            <dd>O abacate é o fruto comestível do abacateiro</dd>
+        </dl>
+    </div>
+
+    <a href="index.html"><button>Voltar</button></a>
+
+</body>
+</html>
