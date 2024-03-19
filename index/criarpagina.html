@@ -1,112 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Criando Página com Navegação Vertical</title>
+    <style>
+        ol>li {
+            margin-left: -10px;
+        }
+
+        .a {
+            line-height: 1px;
+        }
+
+        .inicio>p {
+            text-align: right;
+            margin: 5px;
+        }
+
+        p {
+            text-align: left;
+        }
+    </style>
+
 </head>
+
 <body>
     <a name="inicio"></a>
     <ol>
-        <li>Criar 1 (uma) página HTML que utilize navegação vertical.</li>
+        <li><strong>Criar 1 (uma) página HTML que utilize navegação vertical.</strong></li>
     </ol>
-    <p>Curso de Web Design</p>
-    <p>Conheça nossos cursos:</p>
-    <a name="" href="">
-        <p>HTML</p>
-    </a><a href="#dream">
-        <p>DreamWeaver</p>
-    </a><a href="">
-        <p>Flash</p>
-    </a><a href="">
-        <p>FireWorks</p>
+    <!--Primeira caixa-->
+    <div class="box1">
+        <p>Curso de Web Design</p>
+        <p>Conheça nossos cursos:</p>
+        <a class="a" href="#html">
+            <p>HTML</p>
+        </a>
+        <a class="a" href="#dream">
+            <p>DreamWeaver</p>
+        </a>
+        <a class="a" href="">
+            <p>Flash</p>
+        </a>
+        <a class="a" href="">
+            <p>FireWorks</p>
+        </a>
+    </div>
+    <!--Segunda caixa-->
+    <div class="box2">
+        <a name="html">
+            <h4>HTML</h4>
+        </a>
+        <p>O que é?</p>
+        <p><strong>HTML</strong>(acrônimo para expressão inglesa HyperText Markup Linguage,
+            que significa Linguagem de Marcação de Hipertexto) é Uma
+            linguagem de marcação utilizada para prodzir páginas na Web.
+            Documentos HTML podem ser interpretados por navegadores.</p>
+        <p>Sobre o curso:</p>
+        <p>Este curso ensina desde os conceitos básicos da linguagem
+            HTML, até a criação de Formulários para Web, ideal para iniciantes,
+            o par quem quer uma guia de consulta, também possui um Glossário com todas palavras mais
+            utilizadas na internet
+        </p>
+
+        <a class="inicio" href="#inicio">
+            <p>inicio</p>
+        </a>
+    </div>
+    <!--Terceira caixa-->
+    <div class="box3">
+    <a name="dream">
+        <h3>DreamWeaver</h3>
     </a>
 
-    <h4>HTML</h4>
-    <p>O que é?</p>
-    <p><strong>HTML</strong>(acrônimo para expressão inglesa HyperText Markup Linguage,
-    que significa Linguagem de Marcação de Hipertexto) é Uma
-    linguagem de marcação utilizada para prodzir páginas na Web.
-    Documentos HTML podem ser interpretados por navegadores.</p>
-    <p>Sobre o curso:</p>
-    <p>Este curso ensina desde os conceitos básicos da linguagem
-        HTML, até a criação de Formulários para Web, ideal para iniciantes,
-        o par quem quer uma guia de consulta, também possui um Glossário com todas palavras mais
-        utilizadas na internet
-    </p>
-
-    <a  href="#inicio" >
-        <p>inicio</p>
-    </a>
-
-    <a name="dream" href=""><p>DreamWeaver</p></a>
-
     <p>O que é?</p>
 
-    <p>O Macromedia DreamWeaver é um software de criação para a web criada pela Macromedia (agora Adobe Systems), que está
+    <p>O Macromedia DreamWeaver é um software de criação para a web criada pela Macromedia (agora Adobe Systems), que
+        está
         atualmente na versão CS3. Versões iniciais da aplicação serviam como um simples editor
         HTML WYSIWYG ("What You See Is What You Get", ou "O que você vê é o que você tem"),
-        porém versões mais recentes incorporaram notável suporte para muitas outras tecnologias web tais como XHTML, CSS, JavaScript e 
-        vários scripts de servidor. Desde o final dos anos 90, o DreamWeaver vem tendo um sucesso cresente e hoje domina cerca de 80%
+        porém versões mais recentes incorporaram notável suporte para muitas outras tecnologias web tais como XHTML,
+        CSS, JavaScript e
+        vários scripts de servidor. Desde o final dos anos 90, o DreamWeaver vem tendo um sucesso cresente e hoje domina
+        cerca de 80%
         do mercado de editores HTML.
     </p>
 
     <p>Sobre o curso:</p>
-    <p>Torne-se um Web Designer, uma das profissões mais bem pagas da atualidade. 
+    <p>Torne-se um Web Designer, uma das profissões mais bem pagas da atualidade.
         Aprenda rapidamente e invista muito pouco com este treinamento interativo único.
-         Neste curso você aprenderá a dominar o Dreamweaver CS3 o software mais usado para criação 
-         de sites de sucesso.</p>
+        Neste curso você aprenderá a dominar o Dreamweaver CS3 o software mais usado para criação
+        de sites de sucesso.</p>
     <p>São dezenas de tutoriais ricamente ilustrados com imagens e gráficos explicativos e mais
-         de 50 videoaulas em alta resolução, narradas em português de maneira clara e didática.
+        de 50 videoaulas em alta resolução, narradas em português de maneira clara e didática.
     </p>
 
-    <a href="#inicio">
+    <a class="inicio" href="#inicio">
         <p>inicio</p>
     </a>
-
-    <p>Flash</p>
+    </div>
+    <!--Quarta caixa-->
+    <div class="box4">
+    <a name="flash">
+        <h3>Flash</h3>
+    </a>
     <p>O que é?</p>
     <p>Adobe Flash (antes: Macromedia Flash), ou simplesmente Flash, é um software primariamente
-         de gráfico vetorial - apesar de suportar imagens bitmap e vídeos - utilizado geralmente 
-         para a criação de animações interativas que funcionam embutidas num navegador web.
-          O produto era desenvolvido e comercializado pela Macromedia, empresa especializada
-           em desenvolver programas que auxiliam o processo de criação de páginas web.
+        de gráfico vetorial - apesar de suportar imagens bitmap e vídeos - utilizado geralmente
+        para a criação de animações interativas que funcionam embutidas num navegador web.
+        O produto era desenvolvido e comercializado pela Macromedia, empresa especializada
+        em desenvolver programas que auxiliam o processo de criação de páginas web.
     </p>
-    <p>Em versões recentes (a partir da 5), a Macromedia expandiu a utilização do Flash para além 
-        de simples animações, mas também para uma ferramenta de desenvolvimento de aplicações 
-        completas. Isso graças aos avanços na linguagem ActionScript, que é a linguagem de 
-        programação utilizada em aplicações de arquivos flashes (.swf). A terceira versão desta 
-        linguagem acaba de ser lançada, tornando mais fácil e rápido criar aplicações para web, 
+    <p>Em versões recentes (a partir da 5), a Macromedia expandiu a utilização do Flash para além
+        de simples animações, mas também para uma ferramenta de desenvolvimento de aplicações
+        completas. Isso graças aos avanços na linguagem ActionScript, que é a linguagem de
+        programação utilizada em aplicações de arquivos flashes (.swf). A terceira versão desta
+        linguagem acaba de ser lançada, tornando mais fácil e rápido criar aplicações para web,
         além de contar com recursos bem mais poderosos.
     </p>
 
     <p>Sobre o curso: </p>
 
     <p>Este Curso de Flash visa fornecer todos os conhecimentos necessários para o desenvolvimento
-         de sites, jogos e aplicações multimídia em ambiente Flash.
+        de sites, jogos e aplicações multimídia em ambiente Flash.
     </p>
-    <p>Neste curso de 21 aulas o aluno aprofundar as ferramentas de desenho e animação no Flash, 
+    <p>Neste curso de 21 aulas o aluno aprofundar as ferramentas de desenho e animação no Flash,
         dominar os elementos decisivos na construção de interfaces como as layers, cenas, símbolos
-         e movie clips e programar ao mais alto nível no Flash com o ActionScript.
+        e movie clips e programar ao mais alto nível no Flash com o ActionScript.
     </p>
 
-    <a href="#inicio">
+    <a class="inicio" href="#inicio">
         <p>Inicio</p>
     </a>
-    <p>Fireworks</p>
+    </div>
+
+
+    <!--Quinta caixa-->
+    <div class="box5">
+    <a name="fireworks">
+        <h3>Fireworks</h3>
+    </a>
     <p>O que é?</p>
-    <p>O Fireworks é um editor de imagens desenvolvido pela Macromedia, posteriormente adquirido 
+    <p>O Fireworks é um editor de imagens desenvolvido pela Macromedia, posteriormente adquirido
         pela Adobe. Suas funcionalidades focam a publicação gráfica na Internet, por isso inclui
-         suporte a GIF animado, PNG e imagens fatiadas, além de possuir ótima compressão de imagens.
-          A partir da versão MX, ganhou integração com outros produtos da mesma linha, Dreamweaver, Flash e Freehand.
+        suporte a GIF animado, PNG e imagens fatiadas, além de possuir ótima compressão de imagens.
+        A partir da versão MX, ganhou integração com outros produtos da mesma linha, Dreamweaver, Flash e Freehand.
     </p>
-    <p>Sobre o Curso:</p>]
-    <p>O curso ensina a trabalhar com as mais importantes ferramentas de trabalho com imagens, vetores, textos, 
-        botões e camadas no Fireworks 8. Aborda também o trabalho com alguns filtros, criação e logomarcas e tratamento de imagens.
-         Além disso, destina um capítulo em especial para a criação de websites no Fireworks 8.</p>
+    <p>Sobre o Curso:</p>
+    <p>O curso ensina a trabalhar com as mais importantes ferramentas de trabalho com imagens, vetores, textos,
+        botões e camadas no Fireworks 8. Aborda também o trabalho com alguns filtros, criação e logomarcas e tratamento
+        de imagens.
+        Além disso, destina um capítulo em especial para a criação de websites no Fireworks 8.</p>
 
-    <a href="#inicio">
+    <a class="inicio" href="#inicio">
         <p>Inicio</p>
     </a>
+    </div>
 </body>
+
 </html>
