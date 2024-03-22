@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        .container{
+            border: 1px solid black;
+        }
+        .topo{
+            border: 1px solid black;
+            padding: 15px;
+            margin: 10px;
+            background-color: rgb(165, 7, 7);
+        }
+        .info{
+            border: 1px solid black;
+        }
+        .rodape{
+            border: 1px solid black;
+            background-color: rgb(165, 7, 7);
+            padding: 15px;
+            margin: 10px;
+        }
+        hr{
+            width: 97%;
+            border: 1px solid rgb(173, 19, 19);
+        }
+        /* table{
+             border: 1px solid black;
+        } */
+        tr > td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="topo">
+            
+        </div>
+        <div class="info"> 
+            <h4>Cadastre-se e receba nossas atualizações</h4>
+            <hr>
+            <table align="center">
+                <tr>
+                    <td><label for="">Nome:</label> </td>
+                    <td> <input type="text"> </td>
+                </tr>
+                <tr>
+                    <td><label for="">Senha:</label></td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Confirmação de Senha</label></td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Seu Tipo de Pizza preferido:</label></td>
+                    <td><select name="gosto" id="">
+                        <option value="mar">Margherita</option>
+                        <option value="cala">Calabresa</option>
+                        <option value="fran">Frango</option>
+                        <option value="port">Portuguesa</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Quantas vezes come Pizza por Semestre?</td>
+                    
+                </tr>
+                <tr>
+                    <td rowspan="1"><input type="radio" > Entre 1 a 5 <br>
+                        <input type="radio"> 5 a 10  <br>
+                        <input type="radio"> Mais de 10
+                    </td>
+                </tr>
+                <tr>
+                    <td>Comentário:</td>
+                    <td><textarea name="comentario" id="coment" cols="30" rows="6"></textarea></td>
+                </tr>
+                <tr >
+                    <td align="center" colspan="2"><input type="checkbox" name="msg" id="sms">Deseja receber e-mails dos nosso parceiros</td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="2"><input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar"></td>
+                </tr>
+            </table>
+            <hr>
+            <table border="1" align="center">
+                <tr align="center">
+                    <td align="center"><u>www.pizzaonline.com.br</u></td>
+                </tr>
+            </table>
+        </div>
+        <div class="rodape"></div>
+
+    </div>
+</body>
+</html>
