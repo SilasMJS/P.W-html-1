@@ -26,6 +26,7 @@
 
         .comeco>h4 {
             color: rgb(145, 4, 4);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
         .info {
@@ -39,6 +40,7 @@
             background-color: rgb(179, 83, 83);
             cursor: pointer;
             color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
         input[type="submit"]:hover,
@@ -73,6 +75,10 @@
 
         .site {
             color: rgb(114, 3, 3);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        td{
+            color: red;
         }
 
         h5 {
@@ -81,6 +87,19 @@
             padding-top: 15px;
             padding-bottom: 15px;
         }
+        .label , label {
+            text-align: right;
+            font-style: italic;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif;
+            
+        }
+        td{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        input[type="text"], input[type="password"]{
+            width: 97%;
+        }
+       
     </style>
 </head>
 
@@ -97,19 +116,19 @@
             <hr>
             <table align="center">
                 <tr>
-                    <td><label for="">Nome:</label> </td>
-                    <td> <input type="text"> </td>
+                    <td class="label"><label  for="">Nome:</label> </td>
+                    <td> <input type="text" placeholder="Seu Nome Completo!"> </td>
                 </tr>
                 <tr>
-                    <td><label for="">Senha:</label></td>
-                    <td><input type="password"></td>
+                    <td class="label" ><label for="">Senha:</label></td>
+                    <td><input type="password" placeholder="Digite uma senha forte!"></td>
                 </tr>
                 <tr>
-                    <td><label for="">Confirmação de Senha:</label></td>
-                    <td><input type="password"></td>
+                    <td class="label" ><label for="">Confirmação de Senha:</label></td>
+                    <td><input type="password" placeholder="As senhas tem que ser iguais!"></td>
                 </tr>
                 <tr>
-                    <td><label for="">Seu Tipo de Pizza Preferido:</label></td>
+                    <td class="label" ><label for="">Seu Tipo de Pizza Preferido:</label></td>
                     <td><select name="gosto" id="">
                             <option value="mar">Margherita</option>
                             <option value="cala">Calabresa</option>
@@ -119,18 +138,18 @@
                     </td>
                 </tr>
                 <tr>
-                    <td rowspan="2">Quantas vezes come Pizza por Semestre?</td>
+                    <td class="label" rowspan="2">Quantas vezes come Pizza por Semestre?</td>
 
                 </tr>
                 <tr>
-                    <td rowspan="1"><input type="radio" name="op"> Entre 1 a 5 <br>
+                    <td align="left" rowspan="1"><input type="radio" name="op"> Entre 1 a 5 <br>
                         <input type="radio" name="op"> 5 a 10 <br>
                         <input type="radio" name="op"> Mais de 10
                     </td>
                 </tr>
                 <tr>
-                    <td>Comentário:</td>
-                    <td><textarea name="comentario" id="coment" cols="30" rows="6"></textarea></td>
+                    <td class="label"><label  for="">Comentário:</label></td>
+                    <td><textarea name="comentario" id="coment" cols="30" rows="6" placeholder="Deixe aqui seu comentário..." ></textarea></td>
                 </tr>
                 <tr>
                     <td align="center" colspan="2"><input type="checkbox" name="msg" id="sms">Deseja receber e-mails dos
