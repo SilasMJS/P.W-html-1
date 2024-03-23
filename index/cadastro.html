@@ -33,8 +33,8 @@
             border: 1px solid black;
         }
 
-        input[type="submit"],
-        input[type="reset"] {
+        button[type="submit"],
+        button[type="reset"] {
             border: 1px solid black;
             border-radius: 5px;
             background-color: rgb(179, 83, 83);
@@ -43,8 +43,8 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
-        input[type="submit"]:hover,
-        input[type="reset"]:hover {
+        button[type="submit"]:hover,
+        button[type="reset"]:hover {
             background-color: rgb(138, 25, 25);
         }
 
@@ -108,7 +108,7 @@
     <div class="container">
         <div class="topo">
 
-        </div>
+        </div> 
         <div class="info">
             <div class="comeco">
                 <img src="/index/imagens/pizza.png" alt="">
@@ -118,15 +118,15 @@
             <table align="center">
                 <tr>
                     <td class="label"><label  for="">Nome:</label> </td>
-                    <td> <input type="text" placeholder="Seu Nome Completo!"> </td>
+                    <td> <input type="text" placeholder="Seu Nome Completo!" required> </td>
                 </tr>
                 <tr>
                     <td class="label" ><label for="">Senha:</label></td>
-                    <td><input type="password" placeholder="Digite uma senha forte!"></td>
+                    <td><input type="password" placeholder="Digite uma senha forte!" required></td>
                 </tr>
                 <tr>
                     <td class="label" ><label for="">Confirmação de Senha:</label></td>
-                    <td><input type="password" placeholder="As senhas tem que ser iguais!"></td>
+                    <td><input type="password" placeholder="As senhas tem que ser iguais!" required></td>
                 </tr>
                 <tr>
                     <td class="label" ><label for="">Seu Tipo de Pizza Preferido:</label></td>
@@ -157,13 +157,14 @@
                         nosso parceiros</td>
                 </tr>
                 <tr>
-                    <td align="center" colspan="2"><input type="submit" value="Enviar">
-                        <input type="reset" value="Limpar">
+                    <td align="center" colspan="2"><button type="submit" value="Enviar" href="cadastro.html">Enviar</button>
+                        <button type="reset" value="Limpar">Limpar</button>
                     </td>
                 </tr>
             </table>
             <hr>
             <h5> <a href="" class="site"><u>www.pizzaonline.com.br</u></a></h5>
+            
         </div>
         <div class="rodape"></div>
 
